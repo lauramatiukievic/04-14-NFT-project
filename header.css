@@ -14,9 +14,13 @@
   margin-top: 20px;
 }
 
-.right-container.gray-title,
+.right-header,
 .logo-container {
   width: 50%;
+}
+.right-header {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .header-category {
@@ -37,4 +41,17 @@
 }
 .purple-title {
   color: #ff3998;
+}
+
+.header-hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 428px) {
+  .right-header {
+    display: none;
+  }
+  .header-hamburger {
+    display: inline-block;
+  }
 }

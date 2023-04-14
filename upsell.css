@@ -1,0 +1,16 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.upsell {
+  width: 100%;
+}
+.upsell-background {
+  width: 100%;
+}
+
+.upsell-text {
+  position: absolute;
+}
