@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.header-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.right-container.gray-title,
+.logo-container {
+  width: 50%;
+}
+
+.header-category {
+  display: flex;
+  gap: 28px;
+  list-style-type: none;
+}
+
+.gray-title,
+.purple-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+}
+.gray-title {
+  color: #555555;
+}
+.purple-title {
+  color: #ff3998;
+}
