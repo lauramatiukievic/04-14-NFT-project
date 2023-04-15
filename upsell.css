@@ -6,11 +6,46 @@
 
 .upsell {
   width: 100%;
-}
-.upsell-background {
-  width: 100%;
+  margin-top: 100px;
 }
 
 .upsell-text {
-  position: absolute;
+  padding: 100px 50px;
+
+  background-image: url(nft-logo/background.svg);
+
+  background-repeat: no-repeat;
+
+  background-position: center;
+  background-size: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.upsell-title {
+  width: 100%;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 5px;
+}
+.about-upsell {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+@media screen and (max-width: 428px) {
+  .upsell-text {
+    background-image: url(nft-logo/mobile-back.svg);
+    background-position: right;
+    position: relative;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  .upsell {
+    width: 100%;
+    margin-top: 50px;
+    position: relative;
+  }
 }
