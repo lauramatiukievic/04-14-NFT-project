@@ -21,6 +21,7 @@
 
 .about-logo {
   color: var(--color-grey);
+
 }
 
 .footer-logo {
@@ -42,6 +43,7 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   padding-bottom: 20px;
+
   color: var(--color-white);
 }
 
@@ -71,11 +73,14 @@ li {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
+
   font-weight: 400;
   font-size: 20px;
   line-height: 20px;
+
   text-align: right;
   color: #999999;
+
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -89,12 +94,15 @@ li {
     align-items: flex-start;
     margin-top: 50px;
   }
+
   .nft-logo {
     width: 60%;
   }
+
   .social-media {
     width: 60%;
   }
+
   .li-section {
     padding-top: 50px;
     width: 100%;
@@ -102,24 +110,30 @@ li {
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: 1fr 1fr;
   }
+
   .footer-logo {
     width: 100%;
   }
+
   .footer-section {
     padding: 0px;
   }
+
   .about-logo {
     width: 100%;
     font-weight: 400;
     font-size: 20px;
     line-height: 20px;
+
     color: #555555;
   }
+
   .bottom {
     padding-bottom: 100px;
     padding-top: 0px;
   }
+
   .copyright-date {
     display: none;
   }
-}/*# sourceMappingURL=footer.css.map */
+}

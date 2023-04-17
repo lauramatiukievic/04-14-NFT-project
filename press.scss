@@ -15,7 +15,6 @@
 .press-logo-hidden {
   display: none;
 }
-
 @media screen and (max-width: 428px) {
   .press :nth-child(1),
   .press :nth-child(5) {
@@ -27,7 +26,8 @@
   .press {
     gap: 15px;
   }
+
   .press-logo {
     width: 35%;
   }
-}/*# sourceMappingURL=press.css.map */
+}

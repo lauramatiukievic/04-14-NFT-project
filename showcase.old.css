@@ -19,7 +19,7 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
-  color: var(--color-grey);
+  color: #555555;
 }
 
 .about-showcase-underline {
@@ -40,7 +40,7 @@
 
 .about-doll {
   /* width: 22%; */
-  background-color: var(--color-black);
+  background-color: #eeeeee;
   border-radius: 16px;
 }
 
@@ -57,7 +57,6 @@
   font-size: 40px;
   line-height: 48px;
   margin: 0;
-  color: var(--color-white);
 }
 
 .doll-info {
@@ -89,7 +88,7 @@
   font-size: 12px;
   line-height: 12px;
   text-transform: uppercase;
-  color: var(--color-grey);
+  color: #777777;
 }
 
 .doll-number,
@@ -97,7 +96,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 18px;
-  color: var(--color-grey);
+  color: #777777;
 }
 
 .doll-title,
@@ -106,7 +105,7 @@
   font-size: 20px;
   line-height: 20p;
   text-align: right;
-  color: var(--color-white);
+  color: #111111;
   margin: 0px;
 }
 
@@ -118,4 +117,4 @@
   .nft-dolls {
     margin-right: -950px;
   }
-}/*# sourceMappingURL=showcase.css.map */
+}

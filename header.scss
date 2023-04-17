@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+
+
 .header-container {
   width: 100%;
   display: flex;
@@ -58,10 +60,12 @@
   .right-header {
     display: none;
   }
+
   .header-hamburger {
     display: inline-block;
   }
+
   .nft-logo {
-    filter: invert(0%);
+    filter: invert(0%)
   }
-}/*# sourceMappingURL=header.css.map */
+}

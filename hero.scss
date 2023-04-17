@@ -4,57 +4,57 @@
   box-sizing: border-box;
 }
 
-.footer-upsell {
-  padding-top: 50px;
+.hero-section {
+  margin-top: 12%;
   width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  border-top: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
+  gap: 15%;
 }
 
-.footer-upsell-text {
+.hero-text {
   width: 50%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
 
-.footer-graphic {
-  width: 50%;
+.her-graphic {
   display: flex;
   align-content: center;
   align-items: center;
   justify-content: center;
 }
 
-.footer-girl {
-  width: 40%;
+.nft-monster {
+  width: 100%;
 }
 
-.footer-upsell-info {
+.info {
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+
   color: #ff3998;
 }
 
-.footer-upsell-name {
+.hero-name {
   font-style: normal;
   font-weight: 900;
-  font-size: 56px;
+  font-size: 96px;
   line-height: 116px;
   margin: 0px;
+
   color: var(--color-white);
 }
 
-.footer-upsell-about-hero {
+.about-hero {
   width: 90%;
   font-style: normal;
   font-weight: 400;
@@ -63,48 +63,52 @@
   color: var(--color-grey);
 }
 
-.footer-upsell-button {
+.header-button {
   width: 30%;
   padding: 15px 10px;
   border-radius: 50px;
   border: 2px solid red;
+
   font-weight: 600;
   font-size: 20px;
   line-height: 150%;
 }
 
 @media screen and (max-width: 428px) {
-  .footer-upsell-name {
+  .hero-name {
     width: 70%;
     font-style: normal;
-    font-weight: 900;
+    font-weight: bold;
     font-size: 48px;
     line-height: 58px;
+
     color: #111111;
   }
-  .footer-upsell-about-hero {
-    width: 50%;
+
+  .about-hero {
+    width: 70%;
   }
-  .footer-girl {
+
+  .hero-text {
     width: 100%;
   }
-  .footer-upsell-text {
-    width: 100%;
-  }
-  .footer-upsell-button {
+
+  .header-button {
     width: 50%;
   }
-  .footer-upsell {
+
+  .hero-section {
     position: relative;
-    padding-bottom: 50px;
   }
-  .hidden-footer-upsell {
-    display: none;
-  }
-  .footer-graphic {
+
+  .her-graphic {
     position: absolute;
-    bottom: -1px;
-    right: -50px;
+    top: -10px;
+    right: -150px;
+    overflow-x: hidden;
+  }
+
+  .nft-monster {
     width: 50%;
   }
-}/*# sourceMappingURL=footer-upsel.css.map */
+}

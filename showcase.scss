@@ -19,6 +19,7 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
+
   color: var(--color-grey);
 }
 
@@ -31,6 +32,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 20px;
+
   /* display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -57,12 +59,13 @@
   font-size: 40px;
   line-height: 48px;
   margin: 0;
-  color: var(--color-white);
+  color: var(--color-white)
 }
 
 .doll-info {
   display: flex;
   flex-direction: column;
+
   justify-content: space-between;
   padding: 10px 20px;
 }
@@ -80,6 +83,7 @@
 .orange-text {
   font-size: 12px;
   line-height: 12px;
+
   text-transform: uppercase;
   color: #ff8139;
 }
@@ -88,6 +92,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 12px;
+
   text-transform: uppercase;
   color: var(--color-grey);
 }
@@ -97,6 +102,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 18px;
+
   color: var(--color-grey);
 }
 
@@ -105,7 +111,9 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 20p;
+
   text-align: right;
+
   color: var(--color-white);
   margin: 0px;
 }
@@ -118,4 +126,4 @@
   .nft-dolls {
     margin-right: -950px;
   }
-}/*# sourceMappingURL=showcase.css.map */
+}
