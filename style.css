@@ -1,0 +1,658 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-light-black: #111111;
+  --color-black: rgb(12, 12, 12);
+  --color-white: white;
+  --color-grey: #cccccc;
+  --color-none: transparent;
+}
+
+body {
+  margin: 0px;
+  background: none;
+}
+
+.all-container {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--color-light-black);
+}
+
+@media screen and (max-width: 428px) {
+  .all-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    font-family: "Roboto", sans-serif;
+    background-color: var(--color-white);
+  }
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.header-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.right-header,
+.logo-container {
+  width: 50%;
+}
+
+.right-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-category {
+  display: flex;
+  gap: 28px;
+  list-style-type: none;
+}
+
+.gray-title,
+.purple-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.gray-title {
+  color: white;
+}
+
+.purple-title {
+  color: #ff3998;
+}
+
+.header-hamburger {
+  display: none;
+}
+
+.nft-logo {
+  filter: invert(100%);
+}
+
+@media screen and (max-width: 428px) {
+  .right-header {
+    display: none;
+  }
+  .header-hamburger {
+    display: inline-block;
+  }
+  .nft-logo {
+    filter: invert(0%);
+  }
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.hero-section {
+  margin-top: 12%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15%;
+}
+
+.hero-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.her-graphic {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.nft-monster {
+  width: 100%;
+}
+
+.info {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ff3998;
+}
+
+.hero-name {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 116px;
+  margin: 0px;
+  color: var(--color-white);
+}
+
+.about-hero {
+  width: 90%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: var(--color-grey);
+}
+
+.header-button {
+  width: 30%;
+  padding: 15px 10px;
+  border-radius: 50px;
+  border: 2px solid red;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+@media screen and (max-width: 428px) {
+  .hero-name {
+    width: 70%;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 58px;
+    color: #111111;
+  }
+  .about-hero {
+    width: 70%;
+  }
+  .hero-text {
+    width: 100%;
+  }
+  .header-button {
+    width: 50%;
+  }
+  .hero-section {
+    position: relative;
+  }
+  .her-graphic {
+    position: absolute;
+    top: -10px;
+    right: -150px;
+    overflow-x: hidden;
+  }
+  .nft-monster {
+    width: 50%;
+  }
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.upsell {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.upsell-text {
+  padding: 100px 50px;
+  background-image: url(nft-logo/background.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: var(--color-none);
+}
+.upsell-text .upsell-title {
+  width: 100%;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 5px;
+}
+
+.about-upsell {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+@media screen and (max-width: 428px) {
+  .upsell-text {
+    background-image: url(nft-logo/mobile-back.svg);
+    background-position: right;
+    position: relative;
+    margin-left: -20px;
+    margin-right: -20px;
+    color: var(--color-black);
+  }
+  .upsell {
+    width: 100%;
+    margin-top: 50px;
+    position: relative;
+  }
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.press {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.press-logo-hidden {
+  display: none;
+}
+
+@media screen and (max-width: 428px) {
+  .press :nth-child(1),
+  .press :nth-child(5) {
+    display: none;
+  }
+  .press :nth-child(2) {
+    display: inline;
+  }
+  .press {
+    gap: 15px;
+  }
+  .press-logo {
+    width: 35%;
+  }
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.showcase {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  gap: 30px;
+}
+
+.about-showcase {
+  margin: 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--color-grey);
+}
+
+.about-showcase-underline {
+  border-bottom: 1px solid #555555;
+}
+
+.nft-dolls {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 20px;
+  /* display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 100px; */
+}
+
+.about-doll {
+  /* width: 22%; */
+  background-color: var(--color-black);
+  border-radius: 16px;
+}
+
+.doll {
+  width: 100%;
+}
+
+.rectangle {
+  width: 100%;
+}
+
+.showcase-name {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  margin: 0;
+  color: var(--color-white);
+}
+
+.doll-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.doll-info-about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.money-logo {
+  display: flex;
+}
+
+.orange-text {
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #ff8139;
+}
+
+.position {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: var(--color-grey);
+}
+
+.doll-number,
+.day {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  color: var(--color-grey);
+}
+
+.doll-title,
+.money {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20p;
+  text-align: right;
+  color: var(--color-white);
+  margin: 0px;
+}
+
+.money {
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 428px) {
+  .nft-dolls {
+    margin-right: -950px;
+  }
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.footer-upsell {
+  padding-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.footer-upsell-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.footer-graphic {
+  width: 50%;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-girl {
+  width: 40%;
+}
+
+.footer-upsell-info {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ff3998;
+}
+
+.footer-upsell-name {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 116px;
+  margin: 0px;
+  color: var(--color-white);
+}
+
+.footer-upsell-about-hero {
+  width: 90%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: var(--color-grey);
+}
+
+.footer-upsell-button {
+  width: 30%;
+  padding: 15px 10px;
+  border-radius: 50px;
+  border: 2px solid red;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+@media screen and (max-width: 428px) {
+  .footer-upsell-name {
+    width: 70%;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    color: #111111;
+  }
+  .footer-upsell-about-hero {
+    width: 50%;
+  }
+  .footer-girl {
+    width: 100%;
+  }
+  .footer-upsell-text {
+    width: 100%;
+  }
+  .footer-upsell-button {
+    width: 50%;
+  }
+  .footer-upsell {
+    position: relative;
+    padding-bottom: 50px;
+  }
+  .hidden-footer-upsell {
+    display: none;
+  }
+  .footer-graphic {
+    position: absolute;
+    bottom: -1px;
+    right: -50px;
+    width: 50%;
+  }
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.footer-content {
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.li-section {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about-logo {
+  color: var(--color-grey);
+}
+
+.footer-logo {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.nft-logo {
+  width: 20%;
+}
+
+.li-name {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  color: var(--color-white);
+}
+
+li {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: none;
+  padding-bottom: 10px;
+  color: var(--color-grey);
+}
+
+.footer-section {
+  list-style-type: none;
+}
+
+.social-media {
+  width: 15%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.bottom {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: right;
+  color: #999999;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+@media screen and (max-width: 428px) {
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    margin-top: 50px;
+  }
+  .nft-logo {
+    width: 60%;
+  }
+  .social-media {
+    width: 60%;
+  }
+  .li-section {
+    padding-top: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr 1fr;
+  }
+  .footer-logo {
+    width: 100%;
+  }
+  .footer-section {
+    padding: 0px;
+  }
+  .about-logo {
+    width: 100%;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #555555;
+  }
+  .bottom {
+    padding-bottom: 100px;
+    padding-top: 0px;
+  }
+  .copyright-date {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
