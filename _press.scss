@@ -1,3 +1,5 @@
+@use'variables/color' as variables;
+
 *,
 *::before,
 *::after {
@@ -15,16 +17,21 @@
 .press-logo-hidden {
   display: none;
 }
+
 @media screen and (max-width: 428px) {
+
   .press :nth-child(1),
   .press :nth-child(5) {
     display: none;
   }
+
   .press :nth-child(2) {
     display: inline;
   }
+
   .press {
     gap: 15px;
+    margin: 0px;
   }
 
   .press-logo {

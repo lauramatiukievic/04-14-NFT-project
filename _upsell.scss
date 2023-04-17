@@ -1,3 +1,5 @@
+@use'variables/color' as variables;
+
 *,
 *::before,
 *::after {
@@ -55,7 +57,7 @@
 
   .upsell {
     width: 100%;
-    margin-top: 50px;
+    margin-top: 0px;
     position: relative;
   }
 }

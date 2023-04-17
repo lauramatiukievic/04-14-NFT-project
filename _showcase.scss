@@ -1,3 +1,5 @@
+@use'variables/color' as variables;
+
 *,
 *::before,
 *::after {
@@ -20,7 +22,7 @@
   font-size: 20px;
   line-height: 30px;
 
-  color: var(--color-grey);
+  color: variables.$grey;
 }
 
 .about-showcase-underline {
@@ -42,7 +44,7 @@
 
 .about-doll {
   /* width: 22%; */
-  background-color: var(--color-black);
+  background-color: variables.$black;
   border-radius: 16px;
 }
 
@@ -59,7 +61,7 @@
   font-size: 40px;
   line-height: 48px;
   margin: 0;
-  color: var(--color-white)
+  color: variables.$white;
 }
 
 .doll-info {
@@ -94,7 +96,7 @@
   line-height: 12px;
 
   text-transform: uppercase;
-  color: var(--color-grey);
+  color: variables.$grey;
 }
 
 .doll-number,
@@ -103,7 +105,7 @@
   font-size: 18px;
   line-height: 18px;
 
-  color: var(--color-grey);
+  color: variables.$grey;
 }
 
 .doll-title,
@@ -114,7 +116,7 @@
 
   text-align: right;
 
-  color: var(--color-white);
+  color: variables.$white;
   margin: 0px;
 }
 
@@ -126,4 +128,28 @@
   .nft-dolls {
     margin-right: -950px;
   }
+
+  .showcase-name {
+    color: variables.$black;
+  }
+
+  .about-showcase {
+    color: variables.$dark-grey;
+  }
+
+  .about-doll {
+    background-color: variables.$light-grey;
+  }
+
+  .doll-number,
+  .day {
+    color: variables.$dark-grey;
+
+  }
+
+  .doll-title,
+  .money {
+    color: variables.$black;
+  }
+
 }

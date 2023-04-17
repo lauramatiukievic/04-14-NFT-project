@@ -1,3 +1,5 @@
+@use'variables/color';
+
 *,
 *::before,
 *::after {
@@ -5,14 +7,14 @@
 }
 
 .hero-section {
-  margin-top: 12%;
+
   width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  gap: 15%;
+
 }
 
 .hero-text {
@@ -23,6 +25,7 @@
 }
 
 .her-graphic {
+  width: 50%;
   display: flex;
   align-content: center;
   align-items: center;
@@ -41,7 +44,7 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
 
-  color: #ff3998;
+
 }
 
 .hero-name {
@@ -51,7 +54,7 @@
   line-height: 116px;
   margin: 0px;
 
-  color: var(--color-white);
+  color: color.$white;
 }
 
 .about-hero {
@@ -60,7 +63,7 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 150%;
-  color: var(--color-grey);
+  color: color.$grey;
 }
 
 .header-button {
@@ -68,7 +71,7 @@
   padding: 15px 10px;
   border-radius: 50px;
   border: 2px solid red;
-
+  background-color: white;
   font-weight: 600;
   font-size: 20px;
   line-height: 150%;
@@ -81,16 +84,21 @@
     font-weight: bold;
     font-size: 48px;
     line-height: 58px;
+    color: color.$black;
 
-    color: #111111;
+
   }
 
   .about-hero {
     width: 70%;
+    color: color.$dark-grey;
+
   }
 
   .hero-text {
     width: 100%;
+
+
   }
 
   .header-button {
@@ -99,16 +107,18 @@
 
   .hero-section {
     position: relative;
+    margin-top: 10%;
   }
 
   .her-graphic {
+    width: 100%;
     position: absolute;
-    top: -10px;
-    right: -150px;
+    top: -50px;
+    right: -200px;
     overflow-x: hidden;
   }
 
   .nft-monster {
-    width: 50%;
+    width: 100%;
   }
 }

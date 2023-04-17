@@ -1,3 +1,5 @@
+@use'variables/color' as variables;
+
 *,
 *::before,
 *::after {
@@ -53,8 +55,7 @@
   font-size: 56px;
   line-height: 116px;
   margin: 0px;
-
-  color: var(--color-white);
+  color: variables.$white;
 }
 
 .footer-upsell-about-hero {
@@ -63,7 +64,7 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 150%;
-  color: var(--color-grey);
+  color: variables.$grey;
 }
 
 .footer-upsell-button {
@@ -71,6 +72,7 @@
   padding: 15px 10px;
   border-radius: 50px;
   border: 2px solid red;
+  background-color: variables.$white;
 
   font-weight: 600;
   font-size: 20px;
@@ -85,11 +87,12 @@
     font-size: 48px;
     line-height: 58px;
 
-    color: #111111;
+    color: variables.$black;
   }
 
   .footer-upsell-about-hero {
     width: 50%;
+    color: variables.$dark-grey;
   }
 
   .footer-girl {
